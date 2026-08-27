@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Практическое задание WebStart: создайте персональную веб-визитку."><meta name="theme-color" content="#07111f"><title>Практика — WebStart</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>Web<span>Start</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button><nav class="main-nav" id="main-nav"><a href="index.html">Главная</a><a href="html-basics.html">HTML</a><a href="css-basics.html">CSS</a><a class="active" href="practice.html">Практика</a><a class="nav-cta" href="quiz.html">Пройти тест</a></nav></div></header>
+  <main id="main">
+    <section class="page-hero practice-hero"><div class="container project-intro reveal"><div><div class="lesson-label project-label">Модуль 03 · Практика</div><h1>Создай персональную веб-визитку</h1><p>Объедини HTML и CSS в небольшой законченный проект. Отмечай выполненные шаги — прогресс сохранится в браузере.</p><div class="hero-actions"><a class="button primary" href="#brief">Открыть задание ↓</a><a class="button ghost" href="#example">Посмотреть результат</a></div></div><div class="project-badge"><span>PROJECT</span><strong>01</strong><small>HTML + CSS</small></div></div></section>
+    <section class="section" id="brief"><div class="container project-layout">
+      <article class="project-main">
+        <div class="project-card reveal"><div class="project-card-head"><span>Техническое задание</span><b>100 баллов</b></div><h2>Страница «Обо мне»</h2><p>Создай одностраничный сайт, который коротко рассказывает о тебе, твоих навыках и способах связи.</p><div class="deliverables"><div><span>01</span><div><b>Шапка</b><p>Имя, краткая профессия и навигация.</p></div></div><div><span>02</span><div><b>Обо мне</b><p>Фото или аватар и небольшой текст.</p></div></div><div><span>03</span><div><b>Навыки</b><p>Минимум четыре навыка в карточках.</p></div></div><div><span>04</span><div><b>Контакты</b><p>Email и минимум одна внешняя ссылка.</p></div></div></div></div>
+        <div class="project-card reveal"><div class="project-card-head"><span>Стартовый код</span><button class="copy-button standalone-copy" type="button" data-copy-target="starter-code">Копировать</button></div><div class="code-window lesson-code flush"><div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>index.html</span></div><pre id="starter-code"><code>&lt;!doctype html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Моя визитка&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;&lt;h1&gt;Ваше имя&lt;/h1&gt;&lt;/header&gt;
+  &lt;main&gt;
+    &lt;section id="about"&gt;...&lt;/section&gt;
+    &lt;section id="skills"&gt;...&lt;/section&gt;
+    &lt;section id="contacts"&gt;...&lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div>
+        <div class="project-card reveal" id="example"><div class="project-card-head"><span>Ожидаемый результат</span><b class="success-pill">Пример</b></div><div class="mini-site"><div class="mini-nav"><b>Alex.dev</b><span>Обо мне&nbsp;&nbsp; Навыки&nbsp;&nbsp; Контакты</span></div><div class="mini-hero"><div><small>Привет, я</small><h3>Алексей<br><em>Frontend-разработчик</em></h3><p>Создаю понятные и удобные интерфейсы.</p><button type="button">Связаться</button></div><div class="avatar-shape">A</div></div><div class="mini-skills"><span>HTML</span><span>CSS</span><span>Figma</span><span>Git</span></div></div></div>
+      </article>
+      <aside class="checklist-card reveal"><div class="checklist-head"><div><span>Твой прогресс</span><b id="progress-value">0%</b></div><div class="progress-track"><i id="progress-bar"></i></div></div><div class="checklist" id="practice-checklist">
+        <label><input type="checkbox" data-check="files"><span></span><p><b>Создать файлы</b><small>index.html и style.css</small></p></label>
+        <label><input type="checkbox" data-check="structure"><span></span><p><b>Собрать HTML</b><small>Семантическая структура</small></p></label>
+        <label><input type="checkbox" data-check="content"><span></span><p><b>Добавить контент</b><small>Текст, список и ссылки</small></p></label>
+        <label><input type="checkbox" data-check="styles"><span></span><p><b>Оформить CSS</b><small>Цвета, отступы и карточки</small></p></label>
+        <label><input type="checkbox" data-check="responsive"><span></span><p><b>Проверить телефон</b><small>Ширина экрана 375 px</small></p></label>
+        <label><input type="checkbox" data-check="validate"><span></span><p><b>Финальная проверка</b><small>Ссылки и внешний вид</small></p></label>
+      </div><div class="checklist-finish" id="checklist-finish"><span>🎉</span><b>Проект готов!</b><a href="quiz.html">Перейти к тесту →</a></div><button class="reset-progress" id="reset-progress" type="button">Сбросить прогресс</button></aside>
+    </div></section>
+    <section class="section rubric-section"><div class="container"><div class="section-heading reveal"><div class="eyebrow"><span></span> Оценивание</div><h2>Как получить 100 баллов</h2></div><div class="rubric-grid"><div class="rubric-card reveal"><b>30</b><span>баллов</span><h3>HTML</h3><p>Правильная структура и семантические теги.</p></div><div class="rubric-card reveal"><b>30</b><span>баллов</span><h3>CSS</h3><p>Аккуратные стили и понятные классы.</p></div><div class="rubric-card reveal"><b>20</b><span>баллов</span><h3>Дизайн</h3><p>Единые цвета, шрифты и отступы.</p></div><div class="rubric-card reveal"><b>10</b><span>баллов</span><h3>Адаптивность</h3><p>Корректный вид на телефоне.</p></div><div class="rubric-card reveal"><b>10</b><span>баллов</span><h3>Полнота</h3><p>Все разделы и рабочие ссылки.</p></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>Web<span>Start</span></span></a><p>Учебный проект создан с помощью Codex ChatGPT.</p></div><div class="footer-links"><a href="html-basics.html">HTML</a><a href="css-basics.html">CSS</a><a href="practice.html">Практика</a><a href="quiz.html">Тест</a></div><span class="copyright">© <span data-year></span> WebStart</span></div></footer>
+</body></html>
