@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Интерактивный тест по основам HTML и CSS."><meta name="theme-color" content="#07111f"><title>Тест — WebStart</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head>
+<body class="quiz-page">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>Web<span>Start</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button><nav class="main-nav" id="main-nav"><a href="index.html">Главная</a><a href="html-basics.html">HTML</a><a href="css-basics.html">CSS</a><a href="practice.html">Практика</a><a class="nav-cta active" href="quiz.html">Пройти тест</a></nav></div></header>
+  <main id="main">
+    <section class="quiz-shell">
+      <div class="quiz-intro container reveal" id="quiz-intro"><div class="quiz-orbit"><span>&lt;/&gt;</span><i></i><i></i><i></i></div><div class="lesson-label quiz-label">Финальный этап</div><h1>Проверь свои знания</h1><p>10 вопросов по HTML и CSS. После каждого ответа ты увидишь объяснение, а в конце — итоговый результат.</p><div class="quiz-facts"><span><b>10</b> вопросов</span><span><b>~5</b> минут</span><span><b>70%</b> проходной балл</span></div><button class="button primary quiz-start" id="start-quiz" type="button">Начать тест →</button></div>
+      <div class="quiz-card container" id="quiz-card" hidden>
+        <div class="quiz-top"><div><span id="question-counter">Вопрос 1 из 10</span><b id="score-live">0 баллов</b></div><div class="progress-track quiz-progress"><i id="quiz-progress-bar"></i></div></div>
+        <div class="question-wrap"><div class="question-tag" id="question-tag">HTML</div><h2 id="question-text"></h2><div class="answers" id="answers"></div><div class="answer-explanation" id="answer-explanation" hidden><b id="explanation-title"></b><p id="explanation-text"></p></div><button class="button primary next-question" id="next-question" type="button" disabled>Следующий вопрос →</button></div>
+      </div>
+      <div class="quiz-result container" id="quiz-result" hidden><div class="result-ring" id="result-ring"><div><b id="result-percent">0%</b><span>результат</span></div></div><div class="result-copy"><div class="lesson-label quiz-label">Тест завершён</div><h2 id="result-title">Отличная работа!</h2><p id="result-message"></p><div class="result-stats"><span><b id="correct-count">0</b> правильных</span><span><b id="wrong-count">0</b> ошибок</span></div><div class="result-actions"><button class="button primary" id="restart-quiz" type="button">Пройти ещё раз</button><a class="button ghost" href="html-basics.html">Повторить уроки</a></div></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>Web<span>Start</span></span></a><p>Учебный проект создан с помощью Codex ChatGPT.</p></div><div class="footer-links"><a href="html-basics.html">HTML</a><a href="css-basics.html">CSS</a><a href="practice.html">Практика</a><a href="quiz.html">Тест</a></div><span class="copyright">© <span data-year></span> WebStart</span></div></footer>
+</body></html>
